@@ -1,3 +1,5 @@
+## API Url = "https://url-short-api-lss6.onrender.com"
+
 # URL Shortener Service
 
 This project is a simple URL shortener service built using Node.js, Express.js, and MongoDB. The service allows users to submit lengthy URLs, generates unique short URLs, and provides secure access through basic user registration and login functionalities.
