@@ -5,13 +5,13 @@ import { verifyToken } from "../middlewares/auth.js";
 const router = express.Router();
 
 
-//get The URL
+//-----get The URL With ShortId-------
 router.get("/:shortId", verifyToken, getTheURL);
 
-//get The Url timestamps
+//-----get The Url timestamps---------
 router.get("/timestamps/:shortId", verifyToken, getTheTimestamps);
 
-//create The URL
+//-----create The ShortURL--------
 router.post("/", verifyToken, generateShortURL);
 
 

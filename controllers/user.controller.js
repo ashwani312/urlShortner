@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken"
 import bcrypt from "bcryptjs";
 
 
-//-----registering The user
+//-----registering The user--------
 export const registerTheUser = async (req, res, next) => {
 
     try {
@@ -34,7 +34,7 @@ export const registerTheUser = async (req, res, next) => {
     }
 }
 
-//login the user
+//------------login the user------------
 export const loginTheUser = async (req, res, next) => {
     try {
         const { email } = req.body;

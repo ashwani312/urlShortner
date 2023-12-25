@@ -1,6 +1,9 @@
 import { nanoid } from "nanoid"
 import URL from "../models/url.models.js";
 
+
+
+//-----------Generate Short URL-------------
 export const generateShortURL = async (req, res, next) => {
 
     try {
@@ -24,7 +27,7 @@ export const generateShortURL = async (req, res, next) => {
 }
 
 
-//-------get The URL---------
+//-------get The URL and redirect---------
 
 export const getTheURL = async (req, res, next) => {
     try {
@@ -48,7 +51,7 @@ export const getTheURL = async (req, res, next) => {
     }
 }
 
-//get the timestapms of a particular url
+//----------get the timestapms of a particular url----------
 
 export const getTheTimestamps = async(req, res, next)=>{
  try {
