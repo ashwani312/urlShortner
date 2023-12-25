@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 const app = express();
 
+
 //middelwares
 dotenv.config();
 app.use(cors());
@@ -15,7 +16,10 @@ app.use(express.json());
 app.use("/url", urlRoute);
 app.use("/auth", authRoute);
 
-app.listen(8000, ()=>{
+
+//Listening To the port
+const PORT = process.env.PORT || 5500;
+app.listen(PORT, ()=>{
     console.log("server is running on port 8000");
     connectTheDB();
 });
