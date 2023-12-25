@@ -51,7 +51,7 @@ export const loginTheUser = async (req, res, next) => {
             return res.status(400).json({ msg: "password is Wrong Found" });
         }
 
-        const token = jwt.sign({ id: user._id, email: user.email }, process.env.JWT);
+        const token = jwt.sign({ id: user._id, email: user.email }, `${process.env.JWT}`);
 
         const { password, ...others } = user._doc;
 

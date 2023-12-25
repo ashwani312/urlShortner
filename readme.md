@@ -67,8 +67,7 @@ This project is a simple URL shortener service built using Node.js, Express.js, 
 2. Install dependencies:
 
    ```bash
-  cd urlShortner
-  npm install
+    npm install
     ```
 3. Set up environment variables:
 
