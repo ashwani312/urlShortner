@@ -6,7 +6,7 @@ const router = express.Router();
 
 
 //-----get The URL With ShortId-------
-router.get("/:shortId", verifyToken, getTheURL);
+router.get("/:shortId",  getTheURL);
 
 //-----get The Url timestamps---------
 router.get("/timestamps/:shortId", verifyToken, getTheTimestamps);

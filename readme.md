@@ -93,10 +93,10 @@ This project is a simple URL shortener service built using Node.js, Express.js, 
 ## API Endpoints
 
 - POST /auth/register: Register a new user.
-- POST /auth/login: Log in and obtain an authentication token.
-- POST /url: Shorten a URL (requires authentication).
+- POST /auth/login: Log in and obtain an authentication token and after the login put it in Headers Authentication part.
+- POST /url: Shorten a URL (requires an authentication token from req.headers ).
 - GET /url/:shortId: Redirect to the original URL.
-- GET /url/timestamps/:shortId: To Get the details of URL that how many clicked it.
+- GET /url/timestamps/:shortId: To Get the details of URL that how many clicked it (requires an authentication token from req.headers).
 
 ## Security Considerations
 
